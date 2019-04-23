@@ -1,3 +1,3 @@
 # python
 
-All scripts above require python3.
+All scripts require python3.
