@@ -14,23 +14,31 @@ commands = ['term length 0', 'show version', 'show ip route']
 username = input('Username: ')
 password = getpass.getpass('Password: ')
 
-# create and clean an 'outputs' folder
-path = "./outputs"
-try:
-    shutil.rmtree(path, ignore_errors = True, onerror = None)
-except:
-    print('Error while deleting directory')
-os.mkdir(path)
-os.chdir(path)
-for device in devices.keys():
-    os.mkdir(device)
-    output = (f"{device}_output.txt")
-    device_prompt = devices[device]['prompt']
-    child = pxssh.pxssh()
-    child.login(devices[device]['ip'], username.strip(), password.strip(), auto_prompt_reset=False)
-    with open(f"{device}/{output}", 'wb') as f:
-        for command in commands:
-            child.sendline(command)
-            child.expect(device_prompt)
-            f.write(child.before)
-    child.logout()
+def cleanup():
+    """ Create and clean an 'outputs' folder """
+    path = "./outputs"
+    try:
+        shutil.rmtree(path, ignore_errors = True, onerror = None)
+    except:
+        print('Error while deleting directory')
+    os.mkdir(path)
+    os.chdir(path)
+
+
+def getinfo(): 
+    """ Grab command outputs and write to file """
+    for device in devices.keys():
+        os.mkdir(device)
+        output = (f"{device}_output.txt")
+        device_prompt = devices[device]['prompt']
+        child = pxssh.pxssh()
+        child.login(devices[device]['ip'], username.strip(), password.strip(), auto_prompt_reset=False)
+        with open(f"{device}/{output}", 'wb') as f:
+            for command in commands:
+                child.sendline(command)
+                child.expect(device_prompt)
+                f.write(child.before)
+        child.logout()
+
+cleanup()
+getinfo()
