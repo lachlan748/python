@@ -1,0 +1,1 @@
+2020-05-01 07:08:33,737 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show arp'} on 5 hosts
