@@ -1,0 +1,1 @@
+{'Time': '2020-06-11T06:29:27.035993', 'hostname': 'R01.test.com', 'Gig0-0_In_Octet': '167871', 'Gig0-0_In_uPackets': '579', 'Gig0-0_Out_Octet': '75204', 'Gig0-0_Out_uPackets': '568'}

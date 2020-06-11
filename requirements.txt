@@ -7,3 +7,5 @@ netmiko==3.1.0
 pexpect==4.8.0
 jinja2==2.11.2
 nornir==2.4.0
+scapy==2.4.3
+pysnmp==4.4.12
