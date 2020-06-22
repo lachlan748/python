@@ -9,3 +9,5 @@ jinja2==2.11.2
 nornir==2.4.0
 scapy==2.4.3
 pysnmp==4.4.12
+matplotlib==3.2.2
+pygal==2.4.0

@@ -5,7 +5,7 @@ import datetime
 
 cmdGen = cmdgen.CommandGenerator()
 
-host = '192.168.137.242'
+host = '192.168.137.221'
 community = 'secret'
 
 # Hostname OID

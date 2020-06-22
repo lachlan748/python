@@ -1,1 +1,7 @@
-{'Time': '2020-06-11T06:29:27.035993', 'hostname': 'R01.test.com', 'Gig0-0_In_Octet': '167871', 'Gig0-0_In_uPackets': '579', 'Gig0-0_Out_Octet': '75204', 'Gig0-0_Out_uPackets': '568'}
+{'Time': '2020-06-22T06:36:05.699644', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '167799', 'Gig0-0_In_uPackets': '969', 'Gig0-0_Out_Octet': '123226', 'Gig0-0_Out_uPackets': '984'}
+{'Time': '2020-06-22T06:36:37.508028', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '170463', 'Gig0-0_In_uPackets': '977', 'Gig0-0_Out_Octet': '123923', 'Gig0-0_Out_uPackets': '993'}
+{'Time': '2020-06-22T06:37:30.425508', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '235798', 'Gig0-0_In_uPackets': '1486', 'Gig0-0_Out_Octet': '182052', 'Gig0-0_Out_uPackets': '1504'}
+{'Time': '2020-06-22T06:37:39.822047', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '422627', 'Gig0-0_In_uPackets': '3128', 'Gig0-0_Out_Octet': '369531', 'Gig0-0_Out_uPackets': '3157'}
+{'Time': '2020-06-22T06:37:45.688881', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '597386', 'Gig0-0_In_uPackets': '4662', 'Gig0-0_Out_Octet': '544410', 'Gig0-0_Out_uPackets': '4691'}
+{'Time': '2020-06-22T06:37:51.172766', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '757781', 'Gig0-0_In_uPackets': '6068', 'Gig0-0_Out_Octet': '705067', 'Gig0-0_Out_uPackets': '6099'}
+{'Time': '2020-06-22T06:37:55.737742', 'hostname': 'spine01.test.com', 'Gig0-0_In_Octet': '808667', 'Gig0-0_In_uPackets': '6507', 'Gig0-0_Out_Octet': '754378', 'Gig0-0_Out_uPackets': '6527'}
