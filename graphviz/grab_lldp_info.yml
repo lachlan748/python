@@ -1,0 +1,41 @@
+
+---
+- name: Query LLDP Neighbors on IOS
+  hosts: ios_nodes
+  gather_facts: false
+  connection: network_cli
+  tasks:
+    - name: Query for LLDP Neighbors on ios
+      ios_command:
+        commands: show lldp neighbors
+      when: ansible_network_os == 'ios'
+      register: output
+
+    - name: show output
+      debug:
+        var: output
+
+    - name: copy ios output to file
+      copy:
+        content: "{{ output.stdout_lines }}"
+        dest: "./tmp/{{ inventory_hostname }}_lldp_output.txt"
+
+- name: Query LLDP Neighbors on EOS
+  hosts: eos_nodes
+  gather_facts: false
+  connection: network_cli
+  tasks:
+    - name: Query for LLDP Neighbors on eos
+      eos_command:
+        commands: show lldp neighbors
+      when: ansible_network_os == 'eos'
+      register: output
+
+    - name: show output
+      debug:
+        var: output
+
+    - name: copy ios output to file
+      copy: 
+        content: "{{ output.stdout_lines }}" 
+        dest: "./tmp/{{ inventory_hostname }}_lldp_output.txt"
