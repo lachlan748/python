@@ -1,0 +1,15 @@
+digraph My_Network {
+{rank=same R4 veos1 veos2 R5}
+{rank=same R1}
+
+	R5 -> veos2
+	R4 -> veos1
+	veos2 -> R5
+	R5 -> veos2
+	veos1 -> R1
+	veos1 -> R4
+	R4 -> veos1
+	R1 -> veos1
+	veos2 -> R1
+	R1 -> veos2
+}
