@@ -1,9 +1,0 @@
----
-  - device: core1
-    interface: Ethernet1
-    neighbor: core2
-    neighbor_interface: Ethernet1
-  - device: core1
-    interface: Ethernet2
-    neighbor: core2
-    neighbor_interface: Ethernet2
