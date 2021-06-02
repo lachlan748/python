@@ -1,4 +1,4 @@
-urllib3==1.25.9
+urllib3==1.26.5
 virl2-client==2.0.0b5
 netaddr==0.7.19
 yamllint==1.16.0
