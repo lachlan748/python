@@ -12,4 +12,4 @@ pysnmp==4.4.12
 matplotlib==3.2.2
 pygal==2.4.0
 graphviz==0.14
-ansible==2.9.10
+ansible==4.2.0
