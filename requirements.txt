@@ -2,7 +2,7 @@ urllib3==1.25.9
 virl2-client==2.0.0b5
 netaddr==0.7.19
 yamllint==1.16.0
-paramiko==2.7.1
+paramiko==2.10.1
 netmiko==3.1.0
 pexpect==4.8.0
 jinja2==2.11.2
